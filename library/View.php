@@ -3,6 +3,7 @@
 class View extends Response {
 
     protected $template;
+    protected $defaultTemplate = 'home';
     protected $vars = array();
 
     public function __construct($template, $vars = array())
@@ -16,8 +17,20 @@ class View extends Response {
      */
     public function getTemplate()
     {
+        if (empty($this->template)
+        {
+            return $this->defaultTemplate;
+        }
+
         return $this->template;
     }
+
+    public function getTemplateFileName()
+    {
+        return 'views/' . $this->getTemplate . 'tpl.php';
+    }
+
+    public function getTemplate
 
     /**
      * @return array

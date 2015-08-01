@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>MejorandoPHP</title>
+    <title>Mini Framework PHP</title>
 </head>
 <body>
-<h1>MejorandoPHP</h1>
+<h1>Mini Framework PHP</h1>
 
 <?= $tpl_content; ?>
 
 <hr>
 
-Copyright, ponies
+@gnzandrs
 
 </body>
 </html>
